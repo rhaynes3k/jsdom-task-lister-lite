@@ -8,16 +8,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
   tForm.addEventListener("submit", function(e){
     e.preventDefault()
   let input = document.getElementById('new-task-description').value
-  //let newTask = document.createElement('li')
   tList.innerHTML += `<li>
     ${input}
     <button> Delete </button>
     </li>
     `
-    //console.log(tList)
-  //tList.appendChild(newTask)
   tForm.reset()
-  //  delete function
+  //  start of delete function
   function delBtn(e){
     e.target.parentElement.remove()
   }
